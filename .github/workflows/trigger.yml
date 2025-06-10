@@ -14,5 +14,4 @@ jobs:
           curl -X POST \
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: Bearer ${{ secrets.REPO_A_PAT }}" \
-            https://api.github.com/repos/GabrielGarro92/repoTestA/dispatches \
-            -d '{"event_type": "run-cypress-from-repo-b", "client_payload": {"testFile": "cypress/e2e/test-name.cy.js"}}'
+            https://api.github.com/repos/GabrielGarro92/repoTestA/dispatches
